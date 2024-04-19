@@ -23,6 +23,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "digi-anuragk", // Usually your GitHub org/user name.
   projectName: "git-hands-on", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -45,8 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-          `https://github.com/digi-anuragk/git-hands-on/tree/main/`,
-            
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: false,
         theme: {
