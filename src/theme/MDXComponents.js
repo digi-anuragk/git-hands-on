@@ -3,6 +3,7 @@ import React from "react";
 import MDXComponents from "@theme-original/MDXComponents";
 import Solution from "../components/Solution";
 import Problem from "../components/Problem";
+import Footgun from "../components/Footgun";
 import Mermaid from '@theme/Mermaid';
 export default {
   // Re-use the default mapping
@@ -11,5 +12,6 @@ export default {
   // `Highlight` will receive all props that were passed to `<Highlight>` in MDX
   Solution,
   Problem,
-  Mermaid
+  Footgun,
+  Mermaid,
 };

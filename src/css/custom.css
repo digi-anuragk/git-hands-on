@@ -136,16 +136,19 @@ a.navbar__item:hover {
 }
 
 .markdown h1 {
+  margin-bottom: 2rem;
   text-decoration-line: underline !important ;
   text-underline-offset: 16px !important ;
   text-decoration-color: rgb(251 146 60) !important ;
 }
 .markdown h2 {
+  margin-bottom: 2rem;
   text-decoration-line: underline !important ;
   text-underline-offset: 16px !important ;
   text-decoration-color: rgb(250 204 21) !important ;
 }
 .markdown h3 {
+  margin-bottom: 2rem;
   text-decoration-line: underline !important ;
   text-underline-offset: 16px !important ;
   text-decoration-color: rgb(192 132 252) !important ;

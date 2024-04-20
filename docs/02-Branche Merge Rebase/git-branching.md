@@ -57,7 +57,7 @@ to show all the branches present in our repo. `*` points to the repo which we ar
 
 :::info[Remember]
 
-Git branch will diverge from the branch from which you have ran `git branch [BRANCH_NAME]` command.
+Git branch will diverge from the branch from which you have ran `git branch [BRANCH_NAME]` command. This also they will have all commit history off the branch from it is diverged.
 
 :::
 
@@ -68,6 +68,12 @@ Branches are just pointers to commits in tree.
 ![**alt text**](../../static/img/branch-pointer.png)
 
 thats why they are virtually free.
+
+:::note
+
+`HEAD` is a special pointer which always points to state of repo. Basically `HEAD` shows us where we are in our repo.
+
+:::
 
 # Switching Branches
 
@@ -82,6 +88,23 @@ git checkout <branch name>
 `switch` is a specialized case of checkout which only helps in creating and switching branches.
 
 So to remember this command people generally say `checkout` X branch instead to `switch` to X branch.
+
+:::info
+
+all the commands which accepts `<branch_name>` as a parameter, is actually accepts an commit SHA. (because branches are just pointers to commits)
+
+:::
+
+:::info
+
+To make a new branch and checkout to it, you can use 
+
+```bash
+git checkout -b <branch_name>
+```
+
+:::
+
 
 <Problem>
 Checkout to new branch named foo.
@@ -138,6 +161,7 @@ You can also delete branch from
 ```bash
 git branch -d <branch_name>
 ```
+It will delete commits recursively until no commit or a commit which is present in another branch is encountered. 
 
 :::
 
