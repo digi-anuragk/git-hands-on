@@ -124,7 +124,7 @@ const config = {
       },
       colorMode: {
         defaultMode: "dark",
-        respectPrefersColorScheme: "false",
+        respectPrefersColorScheme: false,
       },
     }),
   markdown: {
