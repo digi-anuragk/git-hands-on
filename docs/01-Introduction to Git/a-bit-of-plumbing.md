@@ -3,14 +3,13 @@ sidebar_position: 3
 title: A Bit of Plumbing
 ---
 
-import Admonition from '@theme/Admonition';
-
 # SHAs
+
 git commits come with a sha (a hash with 0-9a-f characters).
 
 :::info[Before You Ask]
 
-SHA stands for `Secure Hashing Algorithm`, which is used to generate SHA's for each commit. These Sha inlucde basic info about repo, user, changes, time, etc...
+SHA stands for `Secure Hashing Algorithm`, which is used to generate SHA's for each commit. These Sha include basic info about repo, user, changes, time, etc...
 
 That's why we have differnt SHA for same changes.
 
@@ -21,6 +20,7 @@ Lets see our SHA
 ```bash
 git log
 ```
+
 ```bash
 commit 47f441203d412319a457e32ac8db0be07a08250c (HEAD -> master)
 Author: digi-anuragk <anurag.kanwar@digital.ai>
@@ -82,9 +82,9 @@ again
 ```
 
 # Key Concepts
+
 1. **tree**: tree is analagous to directory/folder
 2. **blob**: blob is analagous to file
-
 
 :::info[BIG TAKEAWAY]
 
@@ -92,12 +92,11 @@ Git does not store diffs, git stores complete version of the entire source at th
 
 :::
 
-
 # Lets Do a Second chnage
 
-<Admonition type="note" icon="🤔" title="Problem">
+<Problem>
 With your amazing git skillz, create a second file, second.md, insert some text, stage, and commit the file.
-    <Admonition type="info" icon="😎" title="Solution">
+    <Solution>
 
 ```bash
 echo "second" >> second.md
@@ -106,46 +105,43 @@ git status
 git commit -m "second added"
 ```
 
-</Admonition>
-</Admonition>
+</Solution>
+</Problem>
 
-<Admonition type="note" icon="🤔" title="Problem">
+<Problem>
 Explore Your second commit' SHA
-    <Admonition type="info" icon="😎" title="Solution">
+    <Solution>
 
 use git log to get SHA
 
 ```bash
 git log --oneline --graph
 ```
+
 then see the content of the new SHA
 
 ```bash
 git cat-file -p aa09ff3
 ```
 
-</Admonition>
-</Admonition>
+</Solution>
+</Problem>
 
+# Wait Parent ?? 🤔
 
-# Wait Parent ?? 🤔 
-
-Parent meanse just the previous commit
+Parent means just the previous commit
 
 Visual representation of commit
 
 ![alt text](../../static/img/git-tree-ds.png)
 
-
 So these commits are then visualized on a high level like this
 
 ![alt text](../../static/img/commits-hl.png)
 
+direction of arrow means that this commit is ahead (in time) of previous commit and arrow is pointing towards parent.
 
-direction of arrow meanse that this commit is ahead (in time) of previos commit and arrow is pointing towards parent.
-
-
-we can also show this with 
+we can also show this with
 
 ```bash
 git log --graph --oneline --parents
@@ -155,7 +151,6 @@ git log --graph --oneline --parents
 
 Compare tree of both the commits
 
-`second added` commit shares the actual SHA of its presecdent (in this case immediate parent) commit with the `pointers`, means it does not store the entire worktree itself, which means its significantly more efficient space wise.
-
+`second added` commit shares the actual SHA of its precedent (in this case immediate parent) commit with the `pointers`, means it does not store the entire worktree itself, which means its significantly more efficient space wise.
 
 Hopefully now git feels less magical to you all 🫨

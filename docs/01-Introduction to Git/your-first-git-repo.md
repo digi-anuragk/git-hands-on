@@ -3,8 +3,6 @@ sidebar_position: 2
 title: Your First Git repo
 ---
 
-import Admonition from '@theme/Admonition';
-
 # Git State
 
 See default lists 
@@ -38,9 +36,9 @@ git init
 ```
 it will create a new `.git` folder inside directory.
 
-<Admonition type="note" icon="🤔" title="Problem">
+<Problem>
 Create a new git repo at `/path/to/new/first-git-repo`. Replace `/path/to/new` to your preferred project location.
-    <Admonition type="info" icon="😎" title="Solution">
+    <Solution>
 The higher level steps are:
 
 1. cd to /path/to/new
@@ -57,8 +55,8 @@ cd first-git-repo
 git init
 ```
 
-</Admonition>
-</Admonition>
+</Solution>
+</Problem>
 
 # The Files Are In the Git Repo
 Every git repo comes with a directory that contains all of the state of the git repo. This repo is found in `.git`
@@ -99,7 +97,7 @@ Now let identify where our data is stored in Git. The common assumption is that 
 
 ![Example banner](../../static/img/git-basics-01.png)
 
-1. **Local Working Dir** : this is our playgroud,  our local working dir / local working tree (git terms), in which we have files and have `.git` folder.
+1. **Local Working Dir** : this is our playground,  our local working dir / local working tree (git terms), in which we have files and have `.git` folder.
 2. **The Staging Area / Index** : it's a temporary holding spot for changes before committing. 
 3. **Local Repo** : this is where we store committed changes locally.
 4. **Remote Repo** : A server where we can store and backup our code, like Github, GitLab, BitBucket.
@@ -141,14 +139,14 @@ Most git commands move files between these 4 locations.
 **Congrats if it's your first commit 🎉**
 
 6. Now a common activity in git is to check history of commits in our repo
-   to see previos commits use: 
+   to see previous commits use: 
    ```bash
    git log
    ```
 
    but always use this with options
    ```bash
-   # graph represtation with * as commit cp
+   # graph representation with * as commit cp
    git log --graph 
 
    # to show only commit shah
@@ -157,7 +155,7 @@ Most git commands move files between these 4 locations.
    # to show parent commit
    git log --parents 
 
-   # for pipeing output
+   # for piping output
    git log --decorate 
 
    # to show commits for all branches, default to current branch only

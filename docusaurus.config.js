@@ -6,7 +6,6 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 import tailwindPlugin from "./plugins/tailwind.config.cjs";
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Git :Hands On",
@@ -45,8 +44,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/digi-anuragk/git-hands-on/tree/main/",
+          editUrl: "https://github.com/digi-anuragk/git-hands-on/tree/main/",
         },
         blog: false,
         theme: {
@@ -55,7 +53,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -122,7 +119,18 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.vsDark,
       },
+      mermaid: {
+        theme: { light: "retro", dark: "retro" },
+      },
+      colorMode: {
+        defaultMode: "dark",
+        respectPrefersColorScheme: "false",
+      },
     }),
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
   plugins: [tailwindPlugin],
 };
 
