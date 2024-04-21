@@ -106,6 +106,23 @@ git revert <SHA>
 
 ```
 
+# Clean
+
+`git reset` is good to move `HEAD` to some previous state, but what about we want to clean our repo to its last commit. Basically we want to discard the changes.
+to do that we use
+
+```bash
+git clean -f -d -x
+```
+
+# Restore
+
+To restore some changes in a file.
+
+```bash
+git restore <file_name>
+```
+
 # cherry-pick 🍒
 We can bring only one commit from one branch to another branch ny cherry picking that commit.
 

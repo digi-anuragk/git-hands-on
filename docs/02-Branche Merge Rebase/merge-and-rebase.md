@@ -172,6 +172,48 @@ What about even if the changes are tracked❓
 </Footgun>
 
 
+# Evil Merge
+
+> an `evil merge` is something that makes changes that came from neither
+side and aren't actually resolving a conflict.
+>
+> — Linus Torvalds (creator of Git and Linux)
+
+
+It basically means, do not add extra things while merging because this extra change will not be  present in any history.
+
+example:
+
+1. initial state
+   ```js
+    let x = 3;
+    let y = 4;
+   ```
+
+2. Change From Remote A
+    ```js
+    let x = 3;
+    let y = 4;
+    x++
+   ```
+3. Change From Remote B
+    ```js
+    let x = 3;
+    let y = 4;
+    y--
+   ```
+4. But after merging somehow we git this
+ ```js
+    let x = 3+1000; // <-- evil merge
+    let y = 4;
+    x++
+    y--
+   ```
+
+
+Our merging algorithm allow this but please do not do this, it is strictly prohibited in many orgs.
+
+
 # Rebase
 
 Rebasing often gets a bad wrap. Part of this is because people don't really know why or when to use `rebase` and will end up using it incorrectly and thus yelling on the twitters that it "ruins their entire life.".
