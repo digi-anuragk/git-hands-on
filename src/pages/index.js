@@ -22,7 +22,7 @@ function HomepageHeader() {
           <button
             className={"px-2 py-3 rounded-lg mb-4"}
             onClick={() => {
-              history.push("/docs/Introduction to Git/intro");
+              history.push("git-hands-on/docs/Introduction to Git/intro");
             }}
           >
             Get Git Go 🛩️
