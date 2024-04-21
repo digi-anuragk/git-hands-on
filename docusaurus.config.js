@@ -9,8 +9,8 @@ import tailwindPlugin from "./plugins/tailwind.config.cjs";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Git :Hands On",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  tagline: "Gitism is cool",
+  favicon: "/img/Favicon-FC-.svg",
 
   // Set the production url of your site here
   url: "https://digi-anuragk.github.io",
@@ -22,7 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "digi-anuragk", // Usually your GitHub org/user name.
   projectName: "git-hands-on", // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "main",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.github,
