@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Git Branching
 ---
 
-# Git Branches
+## Git Branches
 
 Having branches makes it easy to work on different things at the same time; say you are working two days on a new feature and in the middle of it you find a bug that needs fixing, you can do that easily by using two branches.
 
@@ -26,7 +26,7 @@ Create a new git repo as `local-git`, and add our first commit in `README.md` wi
 </Solution>
 </Problem>
 
-# Creating Branches
+## Creating Branches
 
 Creating Branches is easy
 
@@ -61,7 +61,7 @@ Git branch will diverge from the branch from which you have ran `git branch [BRA
 
 :::
 
-# What Actually is Branch to Git
+## What Actually is Branch to Git
 
 Branches are just pointers to commits in tree.
 
@@ -75,7 +75,7 @@ thats why they are virtually free.
 
 :::
 
-# Switching Branches
+## Switching Branches
 
 You can switch branches easily in two ways
 
@@ -131,7 +131,7 @@ Now we are on foo lets create another commit with message `B` and a new line add
 Terminal commands:
     ```bash
 
-    # perform on foo
+    ## perform on foo
 
     echo "B" >> second.md
     git add .

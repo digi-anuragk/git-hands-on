@@ -12,7 +12,7 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const history = useHistory();
   return (
-    <header className={clsx(" h-full", styles.heroBanner)}>
+    <header className={clsx("h-full", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
