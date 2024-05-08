@@ -41,8 +41,10 @@ jobs:
         with:
           node-version: 20.x
           cache: yarn
+      - name : Yarn version
+        run : yarn --version
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --non-interactive
+        run: yarn install
       - name: Build
         run: yarn build
       - name: Setup Pages
