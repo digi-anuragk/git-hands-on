@@ -78,7 +78,7 @@ conflicts can also occur when you are trying to merge data from 1 branch to anot
 :::
 
 
-# Conflicts with rebase
+## Conflicts with rebase
 
 Remember `rebase` is fundamentally different from `merge`. `rebase` actually move our changes to the tip of the branch.
 
@@ -192,7 +192,7 @@ git log --graph --oneline
 
 See we do not have merge commit, with diverging branches. This is the beauty of `rebase` we can keep our history straight / clean, because it is easier to debug when something bad happens.
 
-# Problem with rebase
+## Problem with rebase
 
 We loose change while performing rebase.
 like in above there is nowhere that `A+4` change exist in our history. (😏 except in `reflog`)
@@ -289,7 +289,7 @@ git config rerere.enabled true
 :::
 
 
-# Good reason to use rebase with `SQUASHME`
+## Good reason to use rebase with `SQUASHME`
 
 We can do a lot with rebase but I have only done rebase to `squash` my multiple commits into one.
 

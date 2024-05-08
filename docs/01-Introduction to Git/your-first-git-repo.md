@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Your First Git repo
 ---
 
-# Git State
+## Git State
 
 See default lists 
 ```bash
@@ -28,7 +28,7 @@ These are basic git properties we have to add in order to able to perform action
 :::
 
 
-# Creating a new repo
+## Creating a new repo
 The very first step of any project is to create a repo. To create a repo we use
 
 ```bash
@@ -58,10 +58,10 @@ git init
 </Solution>
 </Problem>
 
-# The Files Are In the Git Repo
+## The Files Are In the Git Repo
 Every git repo comes with a directory that contains all of the state of the git repo. This repo is found in `.git`
 
-# Key terms
+## Key terms
 Key Terms
 
 1. **repo**: a git tracked project
@@ -90,7 +90,7 @@ The Git index is a critical data structure in Git. It serves as the “staging a
 
 9. **remote**: The same git repo on another computer or directory. You can accept changes from or potentially push changes too. Think github
 
-# The Basics
+## The Basics
 The next couple commands will be 80% of the commands you will execute when using git. 80% of git is exceptionally easy. Its the 20% that can get you into trouble 🫡
 
 Now let identify where our data is stored in Git. The common assumption is that there are only 2 locations, but truth is our data is not stored in local machine and github. There are actually where our data lives in Git.
@@ -102,7 +102,7 @@ Now let identify where our data is stored in Git. The common assumption is that 
 3. **Local Repo** : this is where we store committed changes locally.
 4. **Remote Repo** : A server where we can store and backup our code, like Github, GitLab, BitBucket.
 
-# Lets Understand Git general workflow
+## Lets Understand Git general workflow
 
 :::info
 

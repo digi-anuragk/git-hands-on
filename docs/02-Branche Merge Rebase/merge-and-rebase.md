@@ -44,7 +44,7 @@ title: Merge And Rebase
 </Problem>
 
 
-# Git Merge And Rebase
+## Git Merge And Rebase
 
 :::info[Remember]
 
@@ -57,7 +57,7 @@ We have work done, but its on another branch. We need to get it back into our ma
 There really is only one strategy to `merge` code from one branch to another, but depending on the history,  different outcomes can happen. `rebase` can help put a branch into a `clean` state.
 
 
-# What is Merge
+## What is Merge
 
 
 A `merge` is attempt to combine two histories together that have diverged (branched) at some point in the past. There is a common `commit` point between the two, this is referred to as the Lowest Common Ancestor (`LCA` which is also referred as `"merge base"` often in the docs).
@@ -66,7 +66,7 @@ A `merge` is attempt to combine two histories together that have diverged (branc
 To put it simply, the first common parent, is the `LCA`.
 git then merges the sets of commits onto the merge base and **`creates a new commit at the tip of the branch`** that is being merged on with all the changes combined into one commit.
 
-# How to Merge
+## How to Merge
 
 Merging is quite simple.
 Merging will merge changes from `source` to `target`
@@ -172,7 +172,7 @@ What about even if the changes are tracked❓
 </Footgun>
 
 
-# Evil Merge
+## Evil Merge
 
 > an `evil merge` is something that makes changes that came from neither
 side and aren't actually resolving a conflict.
@@ -214,7 +214,7 @@ example:
 Our merging algorithm allow this but please do not do this, it is strictly prohibited in many orgs.
 
 
-# Rebase
+## Rebase
 
 Rebasing often gets a bad wrap. Part of this is because people don't really know why or when to use `rebase` and will end up using it incorrectly and thus yelling on the twitters that it "ruins their entire life.".
 

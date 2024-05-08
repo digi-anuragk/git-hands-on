@@ -4,7 +4,7 @@ title: Remote
 ---
 
 
-# Remote 🤔
+## Remote 🤔
 Often we need code changes that have been created by our fellow mates. But how do we get their changes into our repo? Or how do we push our changes to someone else repo?
 
 **It doesn't have to be `remote`...**
@@ -29,7 +29,7 @@ Create a new repo, `remote-git`. Lets initialize it as an empty git repo using `
 </Problem>
 
 
-# Origin
+## Origin
 
 Now to set a remote location as backup copy for our repo, we use below command
 
@@ -66,7 +66,7 @@ git remote -v
 this will show all `push` and `pull` urls.
 
 
-# Push
+## Push
 
 Now we have our `remote` set up, and we also have changes in our `local-git`. Lets backup (`push`) these changes to our remote storage (`remote-git`).
 
@@ -95,7 +95,7 @@ Why we need another branch, because someone else might `push` changes to our rem
 
 
 
-# Set tracking Info
+## Set tracking Info
 
 tracking info is set for each branch individually. Now setting tracking will have two flavours depending wether we have a `remote` branch available or not
 
@@ -129,7 +129,7 @@ we only have to set tracking information only once
 
 
 
-# Fetch
+## Fetch
 
 `fetch` command is used to fetch all remote git state on our local repo.
 
@@ -171,7 +171,7 @@ git diff origin/master
 ```
 
 
-# Merge
+## Merge
 
 Now we have remote changes, how to merge them in our local repo.
 We can use 
@@ -181,7 +181,7 @@ git merge
 ```
 
 
-# Pull
+## Pull
 
 Well pull is a handy command which will perform 2 operation
 
@@ -209,7 +209,7 @@ After that pull these changes from `local-git`.
 
         ```bash
 
-        # remote-git
+        ## remote-git
         git checkout -b ft1
 
         echo "ft1 remote change" >> ft1.md
@@ -218,7 +218,7 @@ After that pull these changes from `local-git`.
 
 
 
-        # local-git
+        ## local-git
 
         git fetch
         git branch -avv

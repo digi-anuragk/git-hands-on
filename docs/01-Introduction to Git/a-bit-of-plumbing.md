@@ -3,7 +3,7 @@ sidebar_position: 3
 title: A Bit of Plumbing
 ---
 
-# SHAs
+## SHAs
 
 git commits come with a sha (a hash with 0-9a-f characters).
 
@@ -34,7 +34,7 @@ commit 47f441203d412319a457e32ac8db0be07a08250c (HEAD -> master)
 -------^ this is the SHA
 ```
 
-# What SHA means to GIT
+## What SHA means to GIT
 
 lets see where our SHA is stored
 
@@ -50,7 +50,7 @@ cat .\.git\objects\47\f441203d412319a457e32ac8db0be07a08250c
 
 We Found it was all 🗑️🗑️
 
-# Tools of the plumber
+## Tools of the plumber
 
 to actually see the data in this file git provide us a cli tool
 
@@ -81,7 +81,7 @@ again
 > README
 ```
 
-# Key Concepts
+## Key Concepts
 
 1. **tree**: tree is analagous to directory/folder
 2. **blob**: blob is analagous to file
@@ -92,7 +92,7 @@ Git does not store diffs, git stores complete version of the entire source at th
 
 :::
 
-# Lets Do a Second chnage
+## Lets Do a Second chnage
 
 <Problem>
 With your amazing git skillz, create a second file, second.md, insert some text, stage, and commit the file.
@@ -127,7 +127,7 @@ git cat-file -p aa09ff3
 </Solution>
 </Problem>
 
-# Wait Parent ?? 🤔
+## Wait Parent ?? 🤔
 
 Parent means just the previous commit
 
@@ -147,7 +147,7 @@ we can also show this with
 git log --graph --oneline --parents
 ```
 
-# Thing to notice
+## Thing to notice
 
 Compare tree of both the commits
 

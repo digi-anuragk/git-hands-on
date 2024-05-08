@@ -4,11 +4,11 @@ title: HEAD 💀
 ---
 
 
-# HEAD
+## HEAD
 
 `HEAD` is just a special pointer which points to current state (commit) of our repo.
 
-# Reflog
+## Reflog
 
 `reflog` is a special `log` which only stores the moving history of `HEAD` pointer.
 
@@ -64,7 +64,7 @@ git checkout -b baz
 
 
 
-# Moving HEAD
+## Moving HEAD
 We can also move `HEAD` relative to its position, to walk back commits.
 We use a special syntax with `~n` to give relative position of commits wrt to current commit.
 
@@ -75,7 +75,7 @@ git checkout HEAD~3
 
 ```
 
-# Reset
+## Reset
 
 We can reset current state of repo to some previous state.
 
@@ -96,7 +96,7 @@ git reset --soft <SHA>
 `--soft`: will reset your repo state to previous commit, but changes will reflect back into tracked stage.
 
 
-# Revert
+## Revert
 
 Revert is like anti-commit of `<provided_commit>`, basically it will not change any history but will add an anti-change which will remove the changes of the `<provided_commit>`.
 
@@ -106,7 +106,7 @@ git revert <SHA>
 
 ```
 
-# Clean
+## Clean
 
 `git reset` is good to move `HEAD` to some previous state, but what about we want to clean our repo to its last commit. Basically we want to discard the changes.
 to do that we use
@@ -115,7 +115,7 @@ to do that we use
 git clean -f -d -x
 ```
 
-# Restore
+## Restore
 
 To restore some changes in a file.
 
@@ -123,7 +123,7 @@ To restore some changes in a file.
 git restore <file_name>
 ```
 
-# cherry-pick 🍒
+## cherry-pick 🍒
 We can bring only one commit from one branch to another branch ny cherry picking that commit.
 
 ```bash
